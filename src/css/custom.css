@@ -1,0 +1,175 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.cm-editor .cm-cursor { border-left-color: light-dark(black, white); }
+
+.my-editor {
+    /*border: 1px solid black;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #CCCCCC;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    caret-color: white !important;
+    /*box-shadow: inset 0 0 0 5px black;*/
+    /*font-family: 'Comic Mono', monospace;*/
+    /*font-weight: bold;*/
+}
+
+.cm-content {
+    font-family: 'Courier Prime', monospace;
+    font-weight: 500;
+    font-size: 14pt;
+}
+
+.cm-editor { 
+    /*border-radius: 5px;*/
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    clip-path: inset(0px 0px -3px 0px);
+}
+
+/* overrides for light/darkl toggle */
+.cm-gutters {
+    background-color: light-dark(#f5f5f5, #242424) !important;
+    color: light-dark(#242424, #777777) !important;
+}
+
+/* overrides for light/darkl toggle */
+.cm-tooltip {
+  background-color: light-dark(#f5f5f5, #242424) !important;
+}
+
+.my-editor-output {
+    font-family: 'Courier Prime', monospace;
+    color: light-dark(#444444, #CCCCCCC);
+    min-height: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 14pt;
+
+    /* preserve newlines */
+    white-space: pre-wrap;
+}
+
+.my-editor-top-bar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #dce8ed;
+}
+
+.my-editor-tooltip {
+    position: relative;
+    z-index: 9999;
+
+    font-family: 'Courier Prime', monospace;
+
+    /*border-radius: 5px;*/
+    border-width: 0px;
+
+
+    /*border: 1px solid #CCCCCC;*/
+
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 300px;
+
+    /* preserve newlines */
+    white-space: pre-wrap;
+
+    background-color: light-dark(#EEEEEE, #333333);
+}
+
+.my-editor-tooltip-header {
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+}
+
+.my-editor-tooltip-body {
+    font-size: 10pt;
+    padding: 0px;
+    margin: 0px;
+}
+
+.my-editor-bold {
+    font-weight: bold;
+}
+
+.my-editor-play-button {
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 0 none transparent;
+
+    padding:0px;
+    display:block;
+    position:absolute;
+    right:10px;
+    top:5px;
+    text-align:center;
+
+    z-index: 99;
+    cursor: pointer;
+
+    border-radius: 3px;
+
+    opacity: 50%;
+
+    font-size: 16px;
+
+    /*
+    line-height: 12px;
+    width: 18px;
+    font-size: 8pt;
+    margin-top: 1px;
+    margin-right: 2px;
+    */
+}
+
+.my-editor-play-button:hover {
+    background-color: #ced7dc;
+}
+
+.my-editor-wrapper {
+    position: relative;
+}
+/*
+.cm-editor.cm-focused { border: 2px solid blue }
+*/
+
+.cm-tooltip {
+    z-index: 999;
+}
