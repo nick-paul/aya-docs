@@ -36,8 +36,8 @@ function insertScriptElement(id, src) {
 
 // Load aya.js and aya-stdlib.js by inserting script tags into the document
 function loadAya() {
-    insertScriptElement('script-ayaweb-aya', '/ayaweb/aya.js');
-    insertScriptElement('script-ayaweb-aya-stdlib', '/ayaweb/aya-stdlib.js');
+    insertScriptElement('script-ayaweb-aya', '/js/aya.js');
+    insertScriptElement('script-ayaweb-aya-stdlib', '/js/aya-stdlib.js');
 }
 
 // Initialize aya library
